@@ -11,6 +11,9 @@
 # core
 # vendor
 
+# Ignore PHPStorm project files
+.idea/
+
 # Ignore configuration files that may contain sensitive information.
 sites/*/settings*.php
 sites/*/services*.yml
