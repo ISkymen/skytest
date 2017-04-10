@@ -1,0 +1,58 @@
+# This file brings everything together. Very nifty!
+
+# Route name can be used in several places; e.g. links, redirects, and local
+# actions.
+entity.s_contact.canonical:
+  path: '/s_contact/{s_contact}'
+  defaults:
+  # Calls the view controller, defined in the annotation of the contact entity
+    _entity_view: 's_contact'
+    _title: 'Contact Content'
+  requirements:
+  # Calls the access controller of the entity, $operation 'view'
+    _entity_access: 's_contact.view'
+
+entity.s_contact.collection:
+  path: '/s_contact/list'
+  defaults:
+  # Calls the list controller, defined in the annotation of the contact entity.
+    _entity_list: 's_contact'
+    _title: 'Contact List'
+  requirements:
+  # Checks for permission directly.
+    _permission: 'administer contact entity'
+
+s_contact.contact_add:
+  path: '/s_contact/add'
+  defaults:
+  # Calls the form.add controller, defined in the contact entity.
+    _entity_form: s_contact.add
+    _title: 'Add Contact'
+  requirements:
+    _entity_create_access: 's_contact'
+
+entity.s_contact.edit_form:
+  path: '/s_contact/{s_contact}/edit'
+  defaults:
+  # Calls the form.edit controller, defined in the contact entity.
+    _entity_form: s_contact.edit
+    _title: 'Edit Contact'
+  requirements:
+    _entity_access: 's_contact.edit'
+
+entity.s_contact.delete_form:
+  path: '/contact/{s_contact}/delete'
+  defaults:
+    # Calls the form.delete controller, defined in the contact entity.
+    _entity_form: s_contact.delete
+    _title: 'Delete Contact'
+  requirements:
+    _entity_access: 's_contact.delete'
+
+s_contact.contact_settings:
+  path: 'admin/structure/s_contact_settings'
+  defaults:
+    _form: '\Drupal\s_contact\Form\ContactSettingsForm'
+    _title: 'Contact Settings'
+  requirements:
+    _permission: 'administer contact entity'

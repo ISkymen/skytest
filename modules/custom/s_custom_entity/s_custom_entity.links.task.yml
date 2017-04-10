@@ -1,0 +1,66 @@
+# S-Contact routing definition
+s_contact.settings_tab:
+  route_name: s_contact.settings
+  title: 'Settings'
+  base_route: s_contact.settings
+
+entity.s_contact.canonical:
+  route_name: entity.s_contact.canonical
+  base_route: entity.s_contact.canonical
+  title: 'View'
+
+entity.s_contact.edit_form:
+  route_name: entity.s_contact.edit_form
+  base_route: entity.s_contact.canonical
+  title: 'Edit'
+
+entity.s_contact.delete_form:
+  route_name:  entity.s_contact.delete_form
+  base_route:  entity.s_contact.canonical
+  title: Delete
+  weight: 10
+
+# Additive routing definition
+additive.settings_tab:
+  route_name: additive.settings
+  title: 'Settings'
+  base_route: additive.settings
+
+entity.additive.canonical:
+  route_name: entity.additive.canonical
+  base_route: entity.additive.canonical
+  title: 'View'
+
+entity.additive.edit_form:
+  route_name: entity.additive.edit_form
+  base_route: entity.additive.canonical
+  title: 'Edit'
+
+entity.additive.delete_form:
+  route_name:  entity.additive.delete_form
+  base_route:  entity.additive.canonical
+  title: Delete
+  weight: 10
+
+# Origin routing definition
+origin.settings_tab:
+  route_name: origin.settings
+  title: 'Settings'
+  base_route: origin.settings
+
+entity.origin.canonical:
+  route_name: entity.origin.canonical
+  base_route: entity.origin.canonical
+  title: 'View'
+
+entity.origin.edit_form:
+  route_name: entity.origin.edit_form
+  base_route: entity.origin.canonical
+  title: 'Edit'
+
+entity.origin.delete_form:
+  route_name:  entity.origin.delete_form
+  base_route:  entity.origin.canonical
+  title: Delete
+  weight: 10
+

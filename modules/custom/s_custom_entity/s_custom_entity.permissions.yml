@@ -1,0 +1,66 @@
+add s-contact entities:
+  title: 'Create new S-Contact entities'
+
+administer s-contact entities:
+  title: 'Administer S-Contact entities'
+  description: 'Allow to access the administration form to configure S-Contact entities.'
+  restrict access: true
+
+delete s-contact entities:
+  title: 'Delete S-Contact entities'
+
+edit s-contact entities:
+  title: 'Edit S-Contact entities'
+
+access s-contact overview:
+  title: 'Access the S-Contact overview page'
+
+view published s-contact entities:
+  title: 'View published S-Contact entities'
+
+view unpublished s-contact entities:
+  title: 'View unpublished S-Contact entities'
+add additive entities:
+  title: 'Create new Additive entities'
+
+administer additive entities:
+  title: 'Administer Additive entities'
+  description: 'Allow to access the administration form to configure Additive entities.'
+  restrict access: true
+
+delete additive entities:
+  title: 'Delete Additive entities'
+
+edit additive entities:
+  title: 'Edit Additive entities'
+
+access additive overview:
+  title: 'Access the Additive overview page'
+
+view published additive entities:
+  title: 'View published Additive entities'
+
+view unpublished additive entities:
+  title: 'View unpublished Additive entities'
+add origin entities:
+  title: 'Create new Origin entities'
+
+administer origin entities:
+  title: 'Administer Origin entities'
+  description: 'Allow to access the administration form to configure Origin entities.'
+  restrict access: true
+
+delete origin entities:
+  title: 'Delete Origin entities'
+
+edit origin entities:
+  title: 'Edit Origin entities'
+
+access origin overview:
+  title: 'Access the Origin overview page'
+
+view published origin entities:
+  title: 'View published Origin entities'
+
+view unpublished origin entities:
+  title: 'View unpublished Origin entities'

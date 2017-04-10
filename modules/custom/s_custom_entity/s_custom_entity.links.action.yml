@@ -1,0 +1,15 @@
+entity.s_contact.add_form:
+  route_name: entity.s_contact.add_form
+  title: 'Add S-Contact'
+  appears_on:
+    - entity.s_contact.collection
+entity.additive.add_form:
+  route_name: entity.additive.add_form
+  title: 'Add Additive'
+  appears_on:
+    - entity.additive.collection
+entity.origin.add_form:
+  route_name: entity.origin.add_form
+  title: 'Add Origin'
+  appears_on:
+    - entity.origin.collection

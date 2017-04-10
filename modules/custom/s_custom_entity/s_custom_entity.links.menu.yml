@@ -1,0 +1,42 @@
+
+# S-Contact menu items definition
+entity.s_contact.collection:
+  title: 'S-Contact list'
+  route_name: entity.s_contact.collection
+  description: 'List S-Contact entities'
+  parent: system.admin_structure
+  weight: 100
+
+s_contact.admin.structure.settings:
+  title: S-Contact settings
+  description: 'Configure S-Contact entities'
+  route_name: s_contact.settings
+  parent: system.admin_structure
+
+# Additive menu items definition
+entity.additive.collection:
+  title: 'Additive list'
+  route_name: entity.additive.collection
+  description: 'List Additive entities'
+  parent: system.admin_structure
+  weight: 100
+
+additive.admin.structure.settings:
+  title: Additive settings
+  description: 'Configure Additive entities'
+  route_name: additive.settings
+  parent: system.admin_structure
+
+# Origin menu items definition
+entity.origin.collection:
+  title: 'Origin list'
+  route_name: entity.origin.collection
+  description: 'List Origin entities'
+  parent: system.admin_structure
+  weight: 100
+
+origin.admin.structure.settings:
+  title: Origin settings
+  description: 'Configure Origin entities'
+  route_name: origin.settings
+  parent: system.admin_structure
