@@ -1,0 +1,7 @@
+addy:
+  path: 'admin/structure/addy'
+  defaults:
+    _controller: '\Drupal\system\Controller\SystemController::systemAdminMenuBlockPage'
+    _title: 'Addy entities'
+  requirements:
+    _permission: 'administer content types'

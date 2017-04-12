@@ -1,0 +1,66 @@
+# Origin routing definition
+addy_origin.settings_tab:
+  route_name: addy_origin.settings
+  title: 'Settings'
+  base_route: addy_origin.settings
+
+entity.addy_origin.canonical:
+  route_name: entity.addy_origin.canonical
+  base_route: entity.addy_origin.canonical
+  title: 'View'
+
+entity.addy_origin.edit_form:
+  route_name: entity.addy_origin.edit_form
+  base_route: entity.addy_origin.canonical
+  title: 'Edit'
+
+entity.addy_origin.delete_form:
+  route_name:  entity.addy_origin.delete_form
+  base_route:  entity.addy_origin.canonical
+  title: Delete
+  weight: 10
+
+# Additive routing definition
+addy_additive.settings_tab:
+  route_name: addy_additive.settings
+  title: 'Settings'
+  base_route: addy_additive.settings
+
+entity.addy_additive.canonical:
+  route_name: entity.addy_additive.canonical
+  base_route: entity.addy_additive.canonical
+  title: 'View'
+
+entity.addy_additive.edit_form:
+  route_name: entity.addy_additive.edit_form
+  base_route: entity.addy_additive.canonical
+  title: 'Edit'
+
+entity.addy_additive.delete_form:
+  route_name:  entity.addy_additive.delete_form
+  base_route:  entity.addy_additive.canonical
+  title: Delete
+  weight: 10
+
+# Product routing definition
+addy_product.settings_tab:
+  route_name: addy_product.settings
+  title: 'Settings'
+  base_route: addy_product.settings
+
+entity.addy_product.canonical:
+  route_name: entity.addy_product.canonical
+  base_route: entity.addy_product.canonical
+  title: 'View'
+
+entity.addy_product.edit_form:
+  route_name: entity.addy_product.edit_form
+  base_route: entity.addy_product.canonical
+  title: 'Edit'
+
+entity.addy_product.delete_form:
+  route_name:  entity.addy_product.delete_form
+  base_route:  entity.addy_product.canonical
+  title: Delete
+  weight: 10
+

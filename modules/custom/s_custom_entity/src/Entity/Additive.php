@@ -235,6 +235,44 @@ class Additive extends ContentEntityBase implements AdditiveInterface {
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
 
+
+
+
+
+
+
+    $fields['origin'] = BaseFieldDefinition::create('entity_reference')
+      ->setLabel(t('Origin'))
+      ->setDescription(t("Additive's orgigin"))
+      ->setSetting('target_type', 'origin')
+      ->setSettings(array(
+        'handler'          => 'default',
+        'handler_settings' => array(            // Added
+          'auto_create'    => TRUE              // Added
+        )
+      ))
+      ->setDisplayOptions('form', array(
+        'type'     => 'entity_reference_autocomplete',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'size'           => 60,
+          'placeholder'    => ''
+        ),
+        'weight'   => 1
+      ))
+      ->setDisplayOptions('view', array(
+        'label' => 'hidden',
+        'type' => 'string',
+        'weight' => 1,
+      ))
+      ->setRequired(TRUE)
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayConfigurable('view', TRUE);
+
+
+
+
+
     $fields['status'] = BaseFieldDefinition::create('boolean')
       ->setLabel(t('Publishing status'))
       ->setDescription(t('A boolean indicating whether the Additive is published.'))

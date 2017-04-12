@@ -1,0 +1,15 @@
+entity.addy_origin.add_form:
+  route_name: entity.addy_origin.add_form
+  title: 'Add Origin'
+  appears_on:
+    - entity.addy_origin.collection
+entity.addy_additive.add_form:
+  route_name: entity.addy_additive.add_form
+  title: 'Add Additive'
+  appears_on:
+    - entity.addy_additive.collection
+entity.addy_product.add_form:
+  route_name: entity.addy_product.add_form
+  title: 'Add Product'
+  appears_on:
+    - entity.addy_product.collection

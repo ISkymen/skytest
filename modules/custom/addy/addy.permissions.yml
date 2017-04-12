@@ -1,0 +1,66 @@
+add origin entities:
+  title: 'Create new Origin entities'
+
+administer origin entities:
+  title: 'Administer Origin entities'
+  description: 'Allow to access the administration form to configure Origin entities.'
+  restrict access: true
+
+delete origin entities:
+  title: 'Delete Origin entities'
+
+edit origin entities:
+  title: 'Edit Origin entities'
+
+access origin overview:
+  title: 'Access the Origin overview page'
+
+view published origin entities:
+  title: 'View published Origin entities'
+
+view unpublished origin entities:
+  title: 'View unpublished Origin entities'
+add additive entities:
+  title: 'Create new Additive entities'
+
+administer additive entities:
+  title: 'Administer Additive entities'
+  description: 'Allow to access the administration form to configure Additive entities.'
+  restrict access: true
+
+delete additive entities:
+  title: 'Delete Additive entities'
+
+edit additive entities:
+  title: 'Edit Additive entities'
+
+access additive overview:
+  title: 'Access the Additive overview page'
+
+view published additive entities:
+  title: 'View published Additive entities'
+
+view unpublished additive entities:
+  title: 'View unpublished Additive entities'
+add product entities:
+  title: 'Create new Product entities'
+
+administer product entities:
+  title: 'Administer Product entities'
+  description: 'Allow to access the administration form to configure Product entities.'
+  restrict access: true
+
+delete product entities:
+  title: 'Delete Product entities'
+
+edit product entities:
+  title: 'Edit Product entities'
+
+access product overview:
+  title: 'Access the Product overview page'
+
+view published product entities:
+  title: 'View published Product entities'
+
+view unpublished product entities:
+  title: 'View unpublished Product entities'

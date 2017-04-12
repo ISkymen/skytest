@@ -1,0 +1,22 @@
+{#
+/**
+ * @file addy_additive.html.twig
+ * Default theme implementation to present Additive data.
+ *
+ * This template is used when viewing Additive pages.
+ *
+ *
+ * Available variables:
+ * - content: A list of content items. Use 'content' to print all content, or
+ * - attributes: HTML attributes for the container element.
+ *
+ * @see template_preprocess_addy_additive()
+ *
+ * @ingroup themeable
+ */
+#}
+<div{{ attributes.addClass('addy_additive') }}>
+  {% if content %}
+    {{- content -}}
+  {% endif %}
+</div>

@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains addy.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function addy_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the addy module.
+    case 'help.page.addy':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Module for Dobavkam.net') . '</p>';
+      return $output;
+
+    default:
+  }
+}

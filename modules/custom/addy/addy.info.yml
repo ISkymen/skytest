@@ -1,0 +1,5 @@
+name: Addy
+type: module
+description: Module for Dobavkam.net
+core: 8.x
+package: Custom

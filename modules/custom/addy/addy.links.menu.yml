@@ -1,0 +1,48 @@
+addy:
+  title: 'Addy'
+  description: 'Menu for Addy entities'
+  parent: system.admin_structure
+  menu_name: main
+  route_name: addy
+
+# Origin menu items definition
+entity.addy_origin.collection:
+  title: 'Origin list'
+  route_name: entity.addy_origin.collection
+  description: 'List Origin entities'
+  parent: addy
+  weight: 100
+
+addy_origin.admin.structure.settings:
+  title: Origin settings
+  description: 'Configure Origin entities'
+  route_name: addy_origin.settings
+  parent: addy
+
+# Additive menu items definition
+entity.addy_additive.collection:
+  title: 'Additive list'
+  route_name: entity.addy_additive.collection
+  description: 'List Additive entities'
+  parent: addy
+  weight: 100
+
+addy_additive.admin.structure.settings:
+  title: Additive settings
+  description: 'Configure Additive entities'
+  route_name: addy_additive.settings
+  parent: addy
+
+# Product menu items definition
+entity.addy_product.collection:
+  title: 'Product list'
+  route_name: entity.addy_product.collection
+  description: 'List Product entities'
+  parent: system.admin_structure
+  weight: 100
+
+addy_product.admin.structure.settings:
+  title: Product settings
+  description: 'Configure Product entities'
+  route_name: addy_product.settings
+  parent: system.admin_structure

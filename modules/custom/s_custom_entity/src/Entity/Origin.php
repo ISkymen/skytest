@@ -41,9 +41,7 @@ use Drupal\user\UserInterface;
  *     "id" = "id",
  *     "label" = "origin",
  *     "uuid" = "uuid",
- *     "uid" = "user_id",
  *     "langcode" = "langcode",
- *     "status" = "status",
  *   },
  *   links = {
  *     "canonical" = "/admin/structure/origin/{origin}",
@@ -83,6 +81,26 @@ class Origin extends ContentEntityBase implements OriginInterface {
       ))
       ->setDisplayConfigurable('form', TRUE)
       ->setDisplayConfigurable('view', TRUE);
+
+
+    $fields['weight'] = BaseFieldDefinition::create('integer')
+      ->setLabel(t('Weight'))
+      ->setDescription(t('The weight of this term in relation to other terms.'))
+      ->setDefaultValue(0)
+      ->setSettings(array(
+        'size' => 'tiny',
+        'min' => 0,
+        'max' => 9
+      ))
+      ->setDisplayOptions('view', array(
+        'label' => 'above',
+        'type' => 'number_integer',
+        'weight' => 4,
+      ))
+      ->setDisplayOptions('form', array(
+        'type' => 'number',
+        'weight' => 0,
+      ));
 
     $fields['info'] = BaseFieldDefinition::create('text_long')
       ->setLabel(t('Origin info'))

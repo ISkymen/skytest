@@ -1,3 +1,9 @@
+addy:
+  title: 'Addy'
+  description: 'Menu for Addy content types'
+  parent: system.admin_structure
+  menu_name: main
+  route_name: addy
 
 # S-Contact menu items definition
 entity.s_contact.collection:
@@ -32,7 +38,7 @@ entity.origin.collection:
   title: 'Origin list'
   route_name: entity.origin.collection
   description: 'List Origin entities'
-  parent: system.admin_structure
+  parent: addy
   weight: 100
 
 origin.admin.structure.settings:
